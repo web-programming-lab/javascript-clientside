@@ -1,0 +1,16 @@
+{
+  "name": "javascript-clientside",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "http-server ./playground/ -o"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "http-server": "^14.1.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.6",
+    "prettier": "^2.5.1"
+  }
+}
