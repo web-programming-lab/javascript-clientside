@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <script src="./asyncscript.js" async></script>
+        <script src="./deferscript.js" defer></script> -->
+    </head>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', () =>{console.log('DOMContentLoaded');}); 
+            window.addEventListener('load', () => {console.log('load');});
+        </script>
+        <script src="./normalscript.js"></script>
+        <script src="./deferscript.js" defer></script>
+        <script src="./asyncscript.js" async></script>
+        <p id="test">hello from dom</p>
+        <script src="./normalscript2.js"></script>
+    </body>
+</html>
