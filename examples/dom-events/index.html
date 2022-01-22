@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div style="width: 50%">
+      <button id="demo-button" style="width: 100%">This is a button</button>
+
+      <div
+        id="mouse-move"
+        style="height: 200px; border-style: dotted; margin-top: 20px"
+      >
+        <span id="position"></span>
+      </div>
+      <input
+        type="text"
+        style="width: 100%; box-sizing: border-box; margin-top: 20px"
+        onkeydown="onEvent(event)"
+        onkeyup="onEvent(event)"
+      />
+    </div>
+  </body>
+</html>
