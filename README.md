@@ -20,13 +20,14 @@ Dieses Repository ist wie folgt strukturiert:
 * `./playground`: Ihr zusätzliche Spielwiese welche mit `npm run start` gestartet werden kann.
 
 ## Ausführen
-* Snippets oder Übungen: `cd ./[exercise ordner | example ordner] && http-server -o .`
+* Snippets oder Übungen: `cd ./[exercise ordner | example ordner] && http-server -o -c-1 .`
 * Playground: `npm run start``
 
 ## Tooling in diesem Repository
 * http-server
 * Prettier
 * ESLint
+* [Mockapi.io](https://mockapi.io/)
 
 ## Empfohlenes Tooling
 * nvm

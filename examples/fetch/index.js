@@ -1,25 +1,26 @@
-/* eslint-disable no-undef */
+const url =  'https://5d0e3cd1eba6ef0014561072.mockapi.io/students';
 
 // GET
 async function getStudents() {
-  const response = await fetch(
-    'https://5d0e3cd1eba6ef0014561072.mockapi.io/students'
-  );
+  const response = await fetch(url);
   return response.json();
 }
 
-getStudents().then((students) => console.log('students', students));
+// POST
+async function postStudents() {
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(student),
+  });
+
+  return response.json();
+}
 
 const student = {
-  firstname: faker.name.firstName(),
-  lastname: faker.name.lastName(),
+  firstname: 'Hans',
+  lastname: 'Meier'
 };
 
-// POST
-const response = fetch('https://5d0e3cd1eba6ef0014561072.mockapi.io/students', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(student),
-});
-
-response.then(console.log);
+getStudents().then((students) => console.log('students', students));
+postStudents().then((result) => console.log('result', result));
