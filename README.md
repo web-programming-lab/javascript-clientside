@@ -1,6 +1,6 @@
 # JavaScript Client-Side I
 
-Mit diesem Repository können Sie die Code- sowie übungsbeispiele aus dem JavaScript Client-Side I lokal ausführen.
+Mit diesem Repository können Sie die Code- sowie Übungsbeispiele aus dem JavaScript Client-Side I lokal ausführen.
 
 Die Ausführungsumgebung ist dabei Ihr Browser. Verwenden Sie vorzugsweise Chrome oder Firefox.
 
