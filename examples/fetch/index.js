@@ -1,4 +1,4 @@
-const url =  'https://5d0e3cd1eba6ef0014561072.mockapi.io/students';
+const url = 'https://5d0e3cd1eba6ef0014561072.mockapi.io/students';
 
 // GET
 async function getStudents() {
@@ -19,7 +19,7 @@ async function postStudents() {
 
 const student = {
   firstname: 'Hans',
-  lastname: 'Meier'
+  lastname: 'Meier',
 };
 
 getStudents().then((students) => console.log('students', students));
