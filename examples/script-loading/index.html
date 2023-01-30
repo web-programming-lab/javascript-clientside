@@ -6,9 +6,12 @@
   </head>
   <body>
     <script>
+      // The DOMContentLoaded event fires when all the nodes in the page have been constructed in the DOM tree. 
       document.addEventListener('DOMContentLoaded', () => {
         console.log('DOMContentLoaded');
       });
+      
+      // The load event fires when all resources such as images and sub-frames are loaded completely.
       window.addEventListener('load', () => {
         console.log('load');
       });

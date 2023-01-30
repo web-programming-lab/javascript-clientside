@@ -23,7 +23,7 @@ Dieses Repository ist wie folgt strukturiert:
 
 ## Ausführen
 
-- Snippets oder Übungen: `cd ./[exercise ordner | example ordner] && http-server -o -c-1 .`
+- Snippets oder Übungen: `cd ./[exercise ordner | example ordner] && npx http-server -o -c-1 .`
 - Playground: `npm run start`
 
 ## Tooling in diesem Repository
