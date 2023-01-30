@@ -1,5 +1,5 @@
 // Add a new element
-const element = document.createElement('h1');
+const element = document.createElement('h1'); // HTMLHeadingElement
 element.textContent = 'DOM manipulation 💡💡💡';
 document.body.append(element);
 
