@@ -1,7 +1,6 @@
 /* eslint-disable quotes */
 console.log(
   "querySelector('ul > li:last-child')",
-  'ul > li:last-child',
   document.querySelector('ul > li:last-child')
 );
 console.log(
