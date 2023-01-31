@@ -22,5 +22,7 @@ const student = {
   lastname: 'Meier',
 };
 
-getStudents().then((students) => console.log('students', students));
-postStudents().then((result) => console.log('result', result));
+const students = await getStudents();
+console.log('students', students);
+const result = await postStudents();
+console.log('result', result);
