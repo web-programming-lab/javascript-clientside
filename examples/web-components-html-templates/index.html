@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      @import url('https://unpkg.com/@picocss/pico@1.*/css/pico.min.css');
+    </style>
+  </head>
   <body>
     <h1>Web Component HTML Templates Example 🤙</h1>
 
     <template id="technology-details">
       <style>
-        .card {
-          /* Add shadows to create the "card" effect */
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          transition: 0.3s;
-        }
-
-        /* On mouse-over, add a deeper shadow */
-        .card:hover {
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        /* Add some padding inside the card container */
-        .container {
-          padding: 2px 16px;
-        }
+        @import 'https://unpkg.com/@picocss/pico@1.*/css/pico.min.css';
       </style>
-      <div class="card">
-        <p class="container">
-          <slot name="technology-name">Technology Placeholder</slot>
-        </p>
-      </div>
+      <article>
+        <header>
+          <slot name="technology-title">Technology Title</slot>
+        </header>
+        <slot name="technology-description">Technology Description</slot>
+        <footer>
+          <slot name="technology-learn-more">Learn More</slot>
+        </footer>
+      </article>
     </template>
 
     <script>
@@ -42,21 +37,45 @@
               templateContent.cloneNode(true)
             );
           }
+
+          connectedCallback() {
+            console.log('Custom element added to page.');
+
+            const title = this.getAttribute('data-title');
+            console.log('title', title);
+          }
         }
       );
     </script>
 
-    <div style="display: flex; flex-direction: row">
-      <techradar-technology-details>
-        <span slot="technology-name">ArgoCD</span>
+    <div>
+      <techradar-technology-details data-title="ArgoCD">
+        <h1 slot="technology-title">ArgoCD</h1>
+        <span slot="technology-description">
+          Argo CD is a declarative, GitOps continuous delivery tool for
+          Kubernetes.
+        </span>
+        <a
+          href="https://argoproj.github.io/argo-cd/"
+          slot="technology-learn-more"
+        >
+          Learn More</a
+        >
       </techradar-technology-details>
 
       <techradar-technology-details>
-        <span slot="technology-name">Angular</span>
+        <h1 slot="technology-title">Angular</h1>
+        <span slot="technology-description">
+          Angular is a platform for building mobile and desktop web
+          applications.
+        </span>
       </techradar-technology-details>
 
       <techradar-technology-details>
-        <span slot="technology-name">React</span>
+        <h1 slot="technology-title">React</h1>
+        <span slot="technology-description">
+          React is a JavaScript library for building user interfaces.
+        </span>
       </techradar-technology-details>
     </div>
   </body>
