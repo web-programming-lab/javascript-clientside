@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Web Component HTML Templates Example 🤙</h1>
+
+    <template id="technology-details">
+      <style>
+        .card {
+          /* Add shadows to create the "card" effect */
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          transition: 0.3s;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+          padding: 2px 16px;
+        }
+      </style>
+      <div class="card">
+        <p class="container">
+          <slot name="technology-name">Technology Placeholder</slot>
+        </p>
+      </div>
+    </template>
+
+    <script>
+      customElements.define(
+        'techradar-technology-details',
+        class extends HTMLElement {
+          constructor() {
+            super();
+
+            const template = document.getElementById('technology-details');
+            const templateContent = template.content;
+
+            const shadowRoot = this.attachShadow({ mode: 'open' }).appendChild(
+              templateContent.cloneNode(true)
+            );
+          }
+        }
+      );
+    </script>
+
+    <div style="display: flex; flex-direction: row">
+      <techradar-technology-details>
+        <span slot="technology-name">ArgoCD</span>
+      </techradar-technology-details>
+
+      <techradar-technology-details>
+        <span slot="technology-name">Angular</span>
+      </techradar-technology-details>
+
+      <techradar-technology-details>
+        <span slot="technology-name">React</span>
+      </techradar-technology-details>
+    </div>
+  </body>
+</html>
