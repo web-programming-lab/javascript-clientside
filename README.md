@@ -8,7 +8,7 @@ Die Ausführungsumgebung ist dabei Ihr Browser. Verwenden Sie vorzugsweise Chrom
 
 - Installation [Visual Studio Code](https://code.visualstudio.com/download) (sofern Sie das noch nicht gemacht haben)
 - Installation [Node.js](https://nodejs.org/) latest LTS Version (für die Verwendung der Entwicklungswerkzeuge)
-- `git clone https://github.com/web-programming-lab/javascript-clientside.git`
+- Git Repository klonen
 - `npm i && npm run start`
 - Falls sich kein Browser öffnet, öffnen Sie Ihren Browser und gehen Sie auf `http://localhost:8080`
 - Es sollte `Hello Web Programming Lab 🤙` erscheinen.
