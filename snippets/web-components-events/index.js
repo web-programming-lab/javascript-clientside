@@ -8,6 +8,7 @@ class MyCustomElementOne extends HTMLElement {
       `;
   }
 
+  // Custom element lifecycle callback - called each time the element is added to the document
   connectedCallback() {
     const buttonEl = this.shadowDom.querySelector('#exampleButton');
     buttonEl.addEventListener('click', () => {
@@ -23,6 +24,7 @@ class MyCustomElementTwo extends HTMLElement {
     this.shadowDom.innerHTML = '<p>this is my custom element 2</p>';
   }
 
+  // Custom element lifecycle callback - called each time the element is added to the document
   connectedCallback() {
     const customElementOneEl = document.querySelector('my-custom-element-one');
     customElementOneEl.addEventListener('customelement-one-click', () => {
