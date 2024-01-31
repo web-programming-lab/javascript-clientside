@@ -6,7 +6,7 @@ Die Ausführungsumgebung ist dabei Ihr Browser. Verwenden Sie vorzugsweise Chrom
 
 ## Vorbereitung
 
-- Installation [Visual Studio Code](https://code.visualstudio.com/download) (sofern Sie das noch nicht gemacht haben)
+- Installation [Visual Studio Code](https://code.visualstudio.com/download) oder [IntelliJ](https://www.jetbrains.com/idea/download) (sofern Sie das noch nicht gemacht haben)
 - Installation [Node.js](https://nodejs.org/) latest LTS Version (für die Verwendung der Entwicklungswerkzeuge)
 - Git Repository klonen
 - NPM Dependencies installieren
