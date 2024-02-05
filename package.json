@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^14.1.0",
-    "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.6.0",
-    "node-fetch": "^3.3.0",
-    "prettier": "^2.8.2"
+    "http-server": "^14.1.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "node-fetch": "^3.3.2",
+    "prettier": "^3.2.5"
   }
 }
